@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+/* Set the default font family and size */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+/* Set the background color for the main container */
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1abc9c;
+}
+
+/* Style the task container */
+.box {
+  width: 700px;
+  min-height: 500px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+#item {
+    padding: 10px;
+    font-size: 20px;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    display: block;
+    font-weight: bold;
+    box-shadow: 0px 0px 2px grey;
+}
+
+/* Style the task list */
+#to-do-box {
+  margin-top: 20px;
+  list-style: none;
+}
+
+#to-do-box li {
+  position: relative;
+  background-color: #16a085;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  padding-right: 30px;
+  text-align: justify;
+  margin-top: 10px;
+  user-select: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#to-do-box li:hover {
+  background-color: #1abc9c;
+}
+
+#to-do-box li i {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+/* Set the styling for completed tasks */
+.done {
+  text-decoration: line-through;
+  color: black;
+  background-color: #ecf0f1 !important;
+}
